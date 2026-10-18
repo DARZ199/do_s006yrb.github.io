@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Algernon</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url("yearbook_20261017175259.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #111;
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: #999;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px;
+        }
+
+        /* Contenedor principal sin marcos ni paneles */
+        .page {
+            width: 100%;
+            max-width: 1100px;
+
+            display: grid;
+            grid-template-columns: 1fr 0.8fr;
+            align-items: center;
+            gap: 70px;
+        }
+
+        /* Información a la izquierda */
+        .info {
+            max-width: 550px;
+        }
+
+        h1 {
+            color: #aaa;
+            font-size: 42px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+
+        .subtitulo {
+            color: #666;
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: #777;
+            font-size: 13px;
+            font-weight: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            color: #999;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+
+
+        .retrato {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .retrato img {
+            display: block;
+            width: 100%;
+            max-width: 370px;
+            height: auto;
+            object-fit: contain;
+
+            
+            filter: grayscale(100%) brightness(85%);
+        }
+
+        
+        .volver {
+            display: inline-block;
+            margin-top: 10px;
+
+            color: #777;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .volver:hover {
+            color: #bbb;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 25px;
+            }
+
+            .pagina {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .retrato {
+                grid-row: 1;
+            }
+
+            .retrato img {
+                max-width: 240px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="info">
+
+            <h1>Algernon "Algie" Papadopoulus</h1>
+
+            <div class="subtitulo">
+                STUDENT INFORMATION
+            </div>
+
+             <div class="section">
+                <h2>Appearance</h2>
+                <p>
+              Overweight student with red hair worn in a short jewfro and brown eyes
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Clothing</h2>
+                <p>
+                 Bullworth Astronomy Club Vest, Short Jeans, Brown Glasses, Red Tie, White Socks
+                 and Brown Shoes
+                </p>
+            </div>
+
+           <div class="section">
+                <h2> Known hobbies</h2>
+                <ul>
+                    <li>Plays G&G</li>
+                    <li>Plays Volleyball</li>
+                    <li>Creates High Powered Weapons</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Frequently visited locations</h2>
+                <ul>
+                    <li>School Library</li>
+                    <li>Football Field</li>
+                    <li>Main School Building</li>
+                    <li>Boys Dorm</li>
+                </ul>
+            </div>
+
+            <a href="nowayout.html" class="back">
+                &lt; BACK
+            </a>
+
+        </section>
+
+        <div class="portrait">
+            <img src="algie.png" alt="Algernon">
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B34tR1C3</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #enlace {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 3s ease;
+        }
+
+        #enlace.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #enlace a {
+            color: #444;
+            font-size: 14px;
+            text-decoration: none;
+            transition: color 1s;
+        }
+
+        #enlace a:hover {
+            color: #888;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio id="ambiente" loop>
+        <source src="Bully grave yard ambiance.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="enlace">
+        <a href="https://youtu.be/mVoAD9qGqyM?si=cpOdR8McG01M9kWl" target="_blank" rel="noopener noreferrer">
+            https://youtu.be/mVoAD9qGqyM?si=cpOdR8McG01M9kWl
+        </a>
+    </div>
+
+    <script>
+        const ambiente = document.getElementById("ambiente");
+
+        window.addEventListener("pointerdown", function iniciarAudio() {
+            ambiente.play().catch(() => {});
+        }, { once: true });
+
+        window.addEventListener("keydown", function iniciarAudio() {
+            ambiente.play().catch(() => {});
+        }, { once: true });
+
+        // Mostrar el enlace después de cinco segundos.
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("enlace")
+                    .classList.add("visible");
+            }, 5000);
+        });
+    </script> 
+//NDGirl_Beatrice.obj was deleted
+</body>
+</html>
